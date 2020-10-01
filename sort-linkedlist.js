@@ -65,9 +65,9 @@ function createRightList(linkedList, middle) {
 
 function mergeLinkedList(left, right) {
   let currentNodeLeft = left.head;
-  console.log('left node: ', currentNodeLeft);
+  // console.log('left node: ', currentNodeLeft);
   let currentNodeRight = right.head;
-  console.log('right node: ', currentNodeRight);
+  // console.log('right node: ', currentNodeRight);
   let mergedList = new LinkedList();
 
   while (currentNodeLeft && currentNodeRight) {
@@ -89,7 +89,7 @@ function mergeLinkedList(left, right) {
     mergedList.insertLast(currentNodeRight.value);
     currentNodeRight = currentNodeRight.next;
   }
-  console.log('merged list: ', display(mergedList));
+  // console.log('merged list: ', display(mergedList));
   return mergedList;
 }
 
